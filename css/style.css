@@ -815,7 +815,7 @@ img {
   opacity: 1;
 }
 .filter-cover {
-  width: 100%;
+  width: 370px;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -827,10 +827,10 @@ img {
   line-height: 1.55;
   /* or 156% */
   letter-spacing: 0.03em;
-  color: #110e0e;
+  color: #FFFFFF;
   opacity: 0;
   transition: 250ms opacity linear;*/
-  padding: 63px 24px;
+  
 }
 .filter-list-item:hover .filter-cover,
 .filter-list-item:focus .filter-cover {
