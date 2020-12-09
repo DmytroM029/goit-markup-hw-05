@@ -723,6 +723,52 @@ img {
   height: 20px;
 }
 
+/*///////////////////Всплываюее окно///////////////*/
+
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  /*
+  background-color: rgba(33, 150, 243, 0.5)*/
+}
+
+.backdrop.is-hidden{
+  opacity: 0;/*Делаем элемент невидимым*/
+  pointer-events: none;/*делаем возможность клика через элемент*/
+}
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color:var(--hero-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal-button{
+  display: flex;
+  position: absolute;
+  width:30px;
+  height:30px;
+  top: 8px;
+  right: 8px;
+  color: #000000;
+  background-color: var(--hero-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  }
+
+
 /*/////////////////////portfolio.html////////////////////////*/
 
 /*filter*/
@@ -827,12 +873,11 @@ img {
   line-height: 1.55;
   /* or 156% */
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: var(--hero-color);
   opacity: 0;
   transition: 250ms opacity linear; 
   padding: 63px 24px;
-  
-}
+  }
 .filter-list-item:hover .filter-cover,
 .filter-list-item:focus .filter-cover {
   opacity: 1;
