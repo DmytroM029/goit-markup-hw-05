@@ -815,6 +815,7 @@ img {
   opacity: 1;
 }
 .filter-cover {
+  display: block;
   width: 370px;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -829,7 +830,8 @@ img {
   letter-spacing: 0.03em;
   color: #FFFFFF;
   opacity: 0;
-  transition: 250ms opacity linear;*/
+  transition: 250ms opacity linear; 
+  padding: 63px 24px;
   
 }
 .filter-list-item:hover .filter-cover,
