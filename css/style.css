@@ -829,7 +829,8 @@ img {
   letter-spacing: 0.03em;
   color: #110e0e;
   opacity: 0;
-  transition: 300ms opacity linear;*/
+  transition: 250ms opacity linear;*/
+  padding: 63px 24px;
 }
 .filter-list-item:hover .filter-cover,
 .filter-list-item:focus .filter-cover {
