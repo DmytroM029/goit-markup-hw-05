@@ -752,7 +752,6 @@ img {
   border-radius: 4px;
 }
 .modal-button{
-  display: flex;
   position: absolute;
   width:30px;
   height:30px;
@@ -766,6 +765,11 @@ img {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  }
+
+  .vector_icon{
+  width: 11px;
+  height: 11px;
   }
 
 
