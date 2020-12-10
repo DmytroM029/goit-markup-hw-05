@@ -907,7 +907,6 @@ img {
   opacity: 1;
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--hero-color);
-  transform: translateY(-0);
 }
 
 /*.filter-list-item::before {
