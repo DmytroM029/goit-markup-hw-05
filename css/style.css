@@ -512,7 +512,6 @@ img {
 }
 .team-list .item {
   display: inline-block;
-  margin-bottom: 90px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -862,51 +861,62 @@ img {
 .filter-thumb {
   /*ДЗ-5*/
   position: relative;
+  overflow: hidden;
 }
 
-.filter-thumb::before {
+/*.filter-thumb::before {
   /*Наведение на картинку, не на блок(карточку с имененм)*/
-  content: "";
+/*content: "";
   display: inline-block;
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0;
-}
-.filter-thumb:hover::before {
-  opacity: 1;
-}
+  top: 0;
+  left: 0;
+  transform: translateY(+100%);
+  background-color: chartreuse;
+  overflow: hidden;
+  /*opacity: 0;*/
+/*}*/
+/*.filter-thumb:hover::before {
+  /*opacity: 1;*/
+/* transform: translateY(0);
+}*/
 .filter-cover {
-  width: 100%;
   position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+  /*transform: translate(-50%, -50%);*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.55;
   color: var(--hero-color);
-  background-color: black;
+  background-color: rgba(33, 150, 243, 0.9);
   /* or 156% */
   letter-spacing: 0.03em;
-  opacity: 0;
+  /*opacity: 0;*/
   /*transition: 250ms opacity linear;*/
   padding: 63px 24px;
-  transition: transform background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-    /*,
-    transform color 250ms cubic-bezier(0.4, 0, 0.2, 1)*/;
-  transition-delay: 250ms;
+  transform: translateY(+100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /*transition: transform background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)*/
+  /*,
+    transform color 250ms cubic-bezier(0.4, 0, 0.2, 1)*/
+  /*transition-delay: 250ms;*/
   /*ИЛИ transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 .filter-list-item:hover .filter-cover,
 .filter-list-item:focus .filter-cover {
-  transform: translate(-20px);
-  opacity: 1;
-  background-color: rgba(33, 150, 243, 0.9);
+  /*transform: translate(-20px);*/
+  /*opacity: 1;*/
+  transform: translateY(0);
 }
 
 /*.filter-list-item::before {
