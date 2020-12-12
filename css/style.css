@@ -129,7 +129,9 @@ img {
   color: var(--title-text-color);
 }
 
-.site-nav .current::after {
+.site-nav .current::after,
+.site-nav .link:hover::after,
+.site-nav .link:focus::after {
   content: "";
   display: block;
   position: absolute;
@@ -213,10 +215,10 @@ img {
   fill: currentColor;
 }*/
 
-/*.icon-mail::before:hover,
-.icon-mail::before:focus,
-.icon-telephone::before:hover,
-.icon-telephone::before:focus {
+/*.icon-mail:hover::before,
+.icon-mail:focus::before,
+.icon-telephone:hover::before,
+.icon-telephone:focus::before {
   content: "";
   fill: var(--title-text-color);
 }*/
@@ -292,6 +294,7 @@ img {
   margin-bottom: 0px;
   /*max-width: 696px;*/
   align-content: center;
+  animation-duration: 1800ms;
 }
 
 /*Button*/
@@ -316,6 +319,7 @@ img {
   cursor: pointer;
   border: 1px solid transparent;
   outline: none;
+  animation-duration: 2200ms;
 }
 
 .button:hover,
