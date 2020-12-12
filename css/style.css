@@ -789,6 +789,12 @@ img {
   cursor: pointer;
 }
 
+.modal-button:hover,
+.modal-button:focus {
+  fill: var(--hero-color);
+  background-color: var(--title-text-color);
+}
+
 .vector_icon {
   width: 11px;
   height: 11px;
